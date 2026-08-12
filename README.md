@@ -1,947 +1,140 @@
-# Enterprise Reverse Engineering Framework (EREF)
+# EREF & TREF — Reverse-Engineering Frameworks
 
-## Overview
+Two sibling frameworks for taking things apart until their machinery is understood.
 
-The **Enterprise Reverse Engineering Framework (EREF)** is a structured methodology for taking a company apart, understanding its individual systems in depth, and then reconstructing how the entire enterprise functions as an integrated whole.
+**EREF** disassembles an **enterprise** — its legal form, its customers, its economics, its strategy.
+**TREF** disassembles a **technology** — its domain model, its architecture, its runtime, its guarantees.
 
-It is designed for situations where a conventional company profile, SWOT analysis, equity-research note, or business-model summary is not enough.
-
-The goal is not merely to understand **what a company does**.
-
-The goal is to understand:
-
-> **What the enterprise is made of, how each component works, why it is structured that way, how the components interact, where value is created and captured, where money/materials/data/authority/risk move, what the enterprise depends on, what can fail, and how the whole system could be reconstructed from first principles.**
-
-EREF treats a company more like a complex machine than a static organization.
+They share a spine and diverge where the object differs. One asymmetry governs almost everything: **TREF's best sources are specifications and source code, which cannot easily misrepresent themselves. EREF's sources are filings and disclosures, which a company chooses to publish and frames to its advantage.**
 
 ---
 
-# Core Concept
+## What is in this bundle
 
-EREF follows two major stages:
+**18 files.** Two constitutions, sixteen prompts.
 
-## 1. Enterprise Teardown
-
-The company is decomposed into its major systems and sub-systems.
-
-These may include:
-
-- corporate structure,
-- ownership,
-- governance,
-- legal entities,
-- regulation,
-- products,
-- customers,
-- pricing,
-- distribution,
-- operations,
-- technology,
-- data,
-- supply chain,
-- workforce,
-- management,
-- culture,
-- revenue,
-- costs,
-- capital,
-- risk,
-- competition,
-- strategic optionality.
-
-## 2. Enterprise Reconstruction
-
-After the components are understood independently, they are recombined into a system-level model showing:
-
-- how components interact,
-- how flows move across the organization,
-- where control resides,
-- where bottlenecks emerge,
-- how the economic engine works,
-- what creates competitive advantage,
-- what is difficult to replicate,
-- what can break,
-- and what the enterprise is likely to become.
-
-This is why the methodology is called **Enterprise Reverse Engineering**, rather than simply an enterprise teardown.
-
----
-
-# Framework Architecture
-
-EREF is divided into five primary research volumes.
-
-## Volume I — Institutional Anatomy
-
-**Corporate, Legal, Regulatory & Institutional Anatomy**
-
-Focuses on:
-
-- corporate history,
-- founders,
-- ownership,
-- voting control,
-- legal entities,
-- subsidiaries,
-- governance,
-- board structure,
-- regulatory permissions,
-- licenses,
-- institutional dependencies,
-- intercompany relationships,
-- tax architecture,
-- legal and regulatory risk.
-
-Primary question:
-
-> **What is the legal and institutional skeleton of the enterprise, and who ultimately controls it?**
-
----
-
-## Volume II — Commercial & Value-Flow Anatomy
-
-**Product, Customer & Value-Flow Architecture**
-
-Focuses on:
-
-- products,
-- services,
-- customer segments,
-- jobs-to-be-done,
-- pricing,
-- customer journeys,
-- distribution,
-- product dependencies,
-- transaction flows,
-- physical flows,
-- money flows,
-- information flows,
-- fulfillment,
-- failure paths.
-
-Primary question:
-
-> **What does the company sell, who buys it, and how does value move from the enterprise to the customer?**
-
----
-
-## Volume III — Operating-System Anatomy
-
-**Operations, Technology, Data & Organizational Infrastructure**
-
-Focuses on:
-
-- operating model,
-- major business processes,
-- supply chain,
-- manufacturing,
-- service delivery,
-- technology architecture,
-- data systems,
-- automation,
-- AI,
-- quality,
-- reliability,
-- security,
-- facilities,
-- employees,
-- organizational structure,
-- decision rights,
-- R&D,
-- operating leverage,
-- bottlenecks,
-- resilience.
-
-Primary question:
-
-> **How does the enterprise actually function at scale?**
-
----
-
-## Volume IV — Economic Anatomy
-
-**Financial Statements, Revenue Architecture, Unit Economics & Capital**
-
-Focuses on:
-
-- revenue streams,
-- pricing,
-- costs,
-- unit economics,
-- segment economics,
-- income statement,
-- balance sheet,
-- cash flow,
-- working capital,
-- capital intensity,
-- debt,
-- funding,
-- return on capital,
-- free cash flow,
-- capital allocation,
-- scenarios,
-- sensitivities.
-
-Primary question:
-
-> **How does the enterprise turn customer activity and assets into revenue, profit, cash flow, and long-term economic value?**
-
----
-
-## Volume V — Strategic Anatomy
-
-**Management, Culture, Competition, Moat, Risk & Strategic Evolution**
-
-Focuses on:
-
-- founders,
-- leadership,
-- management systems,
-- culture,
-- incentives,
-- competitors,
-- substitutes,
-- competitive advantage,
-- moat,
-- replication difficulty,
-- Porter's Five Forces,
-- PESTLE,
-- flywheels,
-- bottlenecks,
-- risk,
-- stress tests,
-- disruption,
-- strategic optionality,
-- five-year and ten-year evolution.
-
-Primary question:
-
-> **Why does the company win, what could destroy its advantage, and what is it becoming?**
-
----
-
-# Optional Final Stage — Enterprise Reconstruction
-
-After Volumes I–V are complete, the research can be synthesized into a sixth document:
-
-## Complete Enterprise Reconstruction
-
-This document should not merely summarize the previous five volumes.
-
-It should reconstruct the company as one integrated system.
-
-A useful conceptual model is:
-
-```text
-Capital
-   ↓
-Legal Structure + People + Technology + Assets
-   ↓
-Products / Services
-   ↓
-Distribution
-   ↓
-Customers
-   ↓
-Transactions / Usage / Orders
-   ↓
-Revenue
-   ↓
-Costs
-   ↓
-Operating Profit
-   ↓
-Cash Flow
-   ↓
-Reinvestment
-   ↓
-Competitive Advantage
-   ↓
-More Customers / Volume / Scale
 ```
-
-The reconstruction should identify:
-
-- the true economic engine,
-- the most important legal entities,
-- the operating core,
-- the strategic bottleneck,
-- the real moat,
-- the largest dependencies,
-- the principal risks,
-- the most valuable hidden asset,
-- the hardest components to replicate.
-
----
-
-# Core Analytical Questions
-
-Every material component should be analyzed through six questions.
-
-## What?
-
-What exists?
-
-Examples:
-
-- entities,
-- products,
-- assets,
-- systems,
-- processes,
-- contracts,
-- licenses,
-- facilities,
-- teams,
-- datasets,
-- channels,
-- revenue streams.
-
-## How?
-
-How does it actually work?
-
-Explain the mechanism, not merely the outcome.
-
-## Who?
-
-Who:
-
-- owns it,
-- operates it,
-- controls it,
-- regulates it,
-- approves it,
-- depends on it,
-- profits from it,
-- bears its risk?
-
-## Where?
-
-Where does the activity occur:
-
-- legally,
-- physically,
-- technologically,
-- economically,
-- organizationally,
-- jurisdictionally?
-
-## When?
-
-What timing matters?
-
-Examples:
-
-- settlement,
-- manufacturing cycles,
-- inventory turns,
-- sales cycles,
-- customer onboarding,
-- accounting recognition,
-- reporting,
-- product development,
-- regulatory approval.
-
-## Why?
-
-Why is the system designed this way?
-
-Possible explanations include:
-
-- regulation,
-- economics,
-- historical path dependence,
-- technical constraints,
-- customer behavior,
-- organizational design,
-- tax,
-- risk management,
-- strategic positioning.
-
----
-
-# Five Cross-Sectional Lenses
-
-Every important subsystem should also be examined through five lenses.
-
-## Structure
-
-What are the constituent pieces?
-
-## Flow
-
-What moves through them?
-
-Possible flows include:
-
-- money,
-- materials,
-- inventory,
-- data,
-- customers,
-- authority,
-- accounting entries,
-- risk,
-- information,
-- regulatory responsibility.
-
-## Control
-
-Who has decision rights?
-
-Who can authorize, block, override, or terminate an action?
-
-## Economics
-
-Who pays?
-
-Who receives?
-
-What does it cost?
-
-Where is value created?
-
-Where is value captured?
-
-## Risk
-
-What can fail?
-
-What happens if it fails?
-
-Who bears the loss?
-
----
-
-# Non-Negotiable Research Principle
-
-## Depth Must Follow the Subject
-
-EREF does not impose artificial page limits.
-
-A section should receive exactly the amount of analysis required by:
-
-- complexity,
-- strategic importance,
-- evidence availability,
-- number of meaningful subcomponents,
-- degree of uncertainty,
-- amount of explanation required for genuine understanding.
-
-If a topic requires:
-
-- 2 pages — write 2 pages.
-- 10 pages — write 10 pages.
-- 25 pages — write 25 pages.
-
-The framework explicitly rejects the practice of shortening important sections merely to produce a visually balanced report.
-
-The governing rule is:
-
-> **Completeness before concision.**
-
-A section ends because the subject is adequately understood, not because an arbitrary length has been reached.
-
----
-
-# Evidence Standards
-
-Research should prioritize primary sources.
-
-Typical hierarchy:
-
-1. Annual reports
-2. Regulatory filings
-3. Securities filings
-4. Investor presentations
-5. Earnings releases
-6. Earnings-call transcripts
-7. Official corporate documents
-8. Product documentation
-9. Pricing documentation
-10. Customer/supplier contracts where public
-11. Government regulators
-12. Central banks
-13. Corporate registries
-14. Patent databases
-15. Court records
-16. Government procurement databases
-17. Official engineering/technical documentation
-18. Official partner documentation
-19. Academic research
-20. High-quality industry research
-21. Reputable financial journalism
-22. Credible executive interviews
-23. Specialist industry publications
-24. Other secondary sources
-
-Low-quality SEO pages, affiliate content, generic comparison sites, and unattributed summaries should not substitute for primary evidence.
-
----
-
-# Evidence Classification
-
-Research should distinguish:
-
-- **Confirmed Fact** — directly supported by reliable evidence.
-- **Company Claim** — stated by the company but not independently verified.
-- **Third-Party Estimate** — externally reported or estimated.
-- **Analytical Inference** — reasonably inferred from multiple facts.
-- **Hypothesis** — plausible but not sufficiently verified.
-- **Unknown** — evidence is insufficient.
-
-An inference must never be presented as a confirmed fact.
-
----
-
-# Industry Agnosticism
-
-EREF is intentionally company- and industry-agnostic.
-
-The framework adapts itself to the enterprise being studied.
-
-Examples:
-
-## Manufacturing
-
-Emphasize:
-
-- suppliers,
-- raw materials,
-- plants,
-- capacity,
-- yield,
-- maintenance,
-- logistics,
-- inventory,
-- distribution,
-- working capital.
-
-## Banking
-
-Emphasize:
-
-- funding,
-- deposits,
-- lending,
-- credit,
-- liquidity,
-- capital,
-- treasury,
-- asset-liability management,
-- regulation.
-
-## Software
-
-Emphasize:
-
-- subscriptions,
-- product architecture,
-- cloud infrastructure,
-- development processes,
-- retention,
-- sales efficiency,
-- data,
-- software margins.
-
-## Marketplaces
-
-Emphasize:
-
-- buyers,
-- sellers,
-- matching,
-- liquidity,
-- take rate,
-- trust,
-- fraud,
-- network effects.
-
-## Pharmaceuticals
-
-Emphasize:
-
-- R&D,
-- clinical trials,
-- patents,
-- regulatory approval,
-- manufacturing,
-- commercialization,
-- pipeline economics.
-
-## Airlines
-
-Emphasize:
-
-- fleet,
-- routes,
-- slots,
-- utilization,
-- fuel,
-- maintenance,
-- labor,
-- loyalty,
-- revenue management.
-
-## Financial Technology / Payments
-
-Emphasize:
-
-- licenses,
-- customer funds,
-- transaction flows,
-- payment rails,
-- settlement,
-- safeguarding,
-- treasury,
-- ledgers,
-- fraud,
-- compliance.
-
-The framework should never force irrelevant concepts onto a company.
-
----
-
-# Follow-the-Flow Rules
-
-EREF requires researchers to trace important flows rather than stopping at high-level descriptions.
-
-## Follow the Money
-
-Trace:
-
-- whose money it is,
-- who controls it,
-- where it resides,
-- when ownership changes,
-- when revenue is recognized,
-- what costs are deducted,
-- who bears risk,
-- when cash is realized.
-
-## Follow the Physical Product
-
-Where relevant:
-
-- raw materials,
-- supplier,
-- inbound logistics,
-- production,
-- inventory,
-- warehouse,
-- distributor,
-- customer,
-- returns/service.
-
-## Follow the Data
-
-Trace:
-
-- data generation,
-- storage,
-- processing,
-- access,
-- analytics,
-- decision usage,
-- governance,
-- privacy.
-
-## Follow the Legal Entity
-
-Determine which entity:
-
-- owns assets,
-- signs contracts,
-- employs staff,
-- holds licenses,
-- earns revenue,
-- bears liabilities,
-- owns IP,
-- pays taxes.
-
-## Follow the Revenue
-
-Trace:
-
-```text
-Customer Need
-   ↓
-Commercial Event
-   ↓
-Pricing
-   ↓
-Gross Transaction / Billing
-   ↓
-Direct Costs
-   ↓
-Recognized Revenue
-   ↓
-Contribution Profit
-   ↓
-Operating Expenses
-   ↓
-Operating Profit
-   ↓
-Cash
+EREF_CONVENTIONS.md            the enterprise constitution — 17 conventions
+TREF_CONVENTIONS.md            the technology constitution — 12 conventions
+
+eref/
+  00_EREF_Reconstruction.md    synthesis stage (NOT a research prompt)
+  01–07_EREF_Volume_*.md       seven volume research prompts
+
+tref/
+  00_TREF_Reconstruction.md    synthesis stage (NOT a research prompt)
+  01–07_TREF_Volume_*.md       seven volume research prompts
 ```
 
 ---
 
-# Research Workflow
+## How the pieces fit
 
-A recommended workflow is:
+**The volume prompts say WHAT to research. The conventions say HOW, and how the volumes cohere into one study. Both go into every brief; neither substitutes for the other.**
 
-## Step 1 — Select a Company
+The reason is mechanical. Each volume is commissioned cold — the agent executing Volume VI has never seen Volumes I through V. Continuity therefore cannot depend on conversation memory; it depends on the conventions document being carried verbatim into every brief, and on each brief restating its predecessors' material findings.
 
-Fill in:
+**A complete brief is three things:**
 
-```markdown
-Company: [COMPANY NAME]
-Industry: [INDUSTRY OR LEAVE BLANK]
-Primary Geographies: [OPTIONAL]
-Research Date: [CURRENT DATE]
-Special Focus: [OPTIONAL]
-```
+1. The **conventions document**, verbatim.
+2. The **volume prompt**, with §0 instantiated.
+3. **Subject-specific material** the templates cannot supply — the volume's owned question, any re-cut, the findings carried forward from prior volumes, source direction, and a framing note naming the analytical traps.
 
-## Step 2 — Run Each Volume Separately
-
-Do not ask one agent to compress all five volumes into a single response.
-
-Recommended sequence:
-
-```text
-Volume I
-↓
-Volume II
-↓
-Volume III
-↓
-Volume IV
-↓
-Volume V
-↓
-Enterprise Reconstruction
-```
-
-Each volume should be treated as an independent research project.
-
-## Step 3 — Preserve Outputs
-
-Save each volume independently.
-
-Suggested naming:
-
-```text
-Company_Name/
-├── 01_Institutional_Anatomy.md
-├── 02_Commercial_Value_Flow.md
-├── 03_Operating_System.md
-├── 04_Economic_Anatomy.md
-├── 05_Strategic_Anatomy.md
-└── 06_Enterprise_Reconstruction.md
-```
-
-## Step 4 — Resolve Unknowns
-
-Each volume should maintain:
-
-- unresolved questions,
-- conflicting sources,
-- missing disclosures,
-- hypotheses requiring verification.
-
-These can become a separate research queue.
-
-## Step 5 — Reconstruct the Enterprise
-
-Only after the five volumes are complete should the company be reconstructed into a unified model.
+The third part is roughly sixty per cent of a real brief. Template plus conventions gets you the other forty.
 
 ---
 
-# Recommended Use Cases
+## The `00` convention
 
-EREF can be used for:
+**Both reconstruction files carry `00`, not `07`, and this is deliberate.**
 
-- deep company research,
-- founder education,
-- competitive intelligence,
-- investment research,
-- acquisition research,
-- strategic planning,
-- business-model study,
-- industry learning,
-- operating-model benchmarking,
-- product strategy,
-- corporate-history research,
-- business-school style case analysis,
-- understanding companies before building a competitor.
+Every other prompt commissions research. The reconstruction does not — it operates on volumes that already exist and is given to the synthesiser with those volumes in hand. It has an input manifest and a gap check instead of a source priority; it inherits evidence labels rather than generating them; and it consolidates verdicts rather than reaching them.
 
-It is particularly useful when the goal is:
-
-> **“I want to understand this company well enough that I could explain how the entire machine works.”**
+`00` sorts it above the volumes it consumes, which is structurally honest: it is the first file you read when deciding to run a study, and the last thing you execute.
 
 ---
 
-# What EREF Is Not
+## Configurations
 
-EREF is not automatically:
+Neither framework has a fixed volume count. Declare the choice in §0.
 
-- a valuation model,
-- a stock recommendation,
-- a legal opinion,
-- an audit,
-- a management consulting engagement,
-- commercial due diligence,
-- technical due diligence,
-- financial due diligence.
+**EREF — Compact 5 · Standard 7 · Extended 8–10**
 
-It may incorporate elements of all of these disciplines, but its objective is broader:
+Standard is the default. Compact merges demand into product (II+III) and operations into technology (IV+V). Extended adds conditional volumes against stated tests: **VIII** the Regulatory & Licensing Estate (when permissions determine what the business can be), **IX** International Expansion (three or more markets, or any entry-and-exit), **X** the Abandonment Record (ten or more years of history).
 
-> **Enterprise-level system understanding.**
+*The IV/V split is the stronger of the two; the II/III split is weaker because it puts a seam through the who-pays question. Mitigate with Convention 7.*
 
----
+**TREF — Compact 3 · Standard 6 · Extended 7**
 
-# Enterprise Teardown vs Enterprise Reverse Engineering
+Standard is the default. Compact merges I+II, III+IV, V+VI. Extended adds **VII — Security & Threat Model**, commissioned when the technology holds money, credentials or personal data, or is internet-facing or multi-tenant. The conditional marking is honest: a compression library should skip it; a ledger should not.
 
-These terms are related but not identical.
-
-## Enterprise Teardown
-
-Means:
-
-> Take the enterprise apart and inspect its components.
-
-This is the **decomposition phase**.
-
-## Enterprise Reverse Engineering
-
-Means:
-
-> Take the enterprise apart, infer how each component works and interacts, and reconstruct the system from observable evidence.
-
-This is the **complete methodology**.
-
-Therefore:
-
-```text
-Enterprise Reverse Engineering
-│
-├── Enterprise Teardown
-│   ├── Decomposition
-│   ├── Component Analysis
-│   ├── Flow Analysis
-│   └── Dependency Mapping
-│
-└── Enterprise Reconstruction
-    ├── Economic Model
-    ├── Operating Model
-    ├── Control Model
-    ├── Risk Model
-    ├── Moat Model
-    └── Strategic Model
-```
+**The test for any additional volume: does it own a question no existing volume can answer?** If not, it is a section.
 
 ---
 
-# The Car Analogy
+## The two objectives
 
-EREF can be visualized using a car teardown.
+Both frameworks run **neutrally** — to understand the subject — or as an **extraction**, where the reader intends to build something informed by it. Declare which in §0.
 
-| Automobile | Enterprise |
-|---|---|
-| Chassis | Legal and corporate structure |
-| Engine | Economic/revenue engine |
-| Fuel | Capital |
-| Transmission | Operating model |
-| ECU | Technology and data |
-| Driver | Management |
-| Steering | Strategy |
-| Dashboard | KPIs and accounting |
-| Brakes | Risk and compliance |
-| Suspension | Organizational resilience |
-| Wheels | Distribution |
-| Passengers | Customers |
-| Mechanics | Employees |
-| Road | Market |
-| Traffic laws | Regulation |
-| Other vehicles | Competitors |
+Under an extraction objective every volume carries **ADOPT / ADAPT / REJECT** verdicts on each material mechanism, each preceded by the **environment question**: *did this work because of the mechanism itself, or because of the environment surrounding it?* Strip the environment out, then judge.
 
-The goal is not simply to identify the components.
+**A REJECT is as valuable as an ADOPT**, and must carry its constructive half: having established what cannot be done, establish what should be done instead.
 
-The goal is to understand **how they interact well enough to reconstruct the machine**.
+Verdicts are stated in the volume where the mechanism is analysed. The reconstruction consolidates them; it does not generate them.
 
 ---
 
-# Completion Standard
+## The bridge between the frameworks
 
-The research is complete only when a sophisticated reader can answer:
+**It runs one way and is formal.** EREF's technology volume closes with a ranked **TREF candidate list** — scored on business criticality, uniqueness, technical complexity, moat relevance and replacement difficulty. That list is a deliverable, not a gesture: it is where an enterprise study hands a system to a technology study.
 
-- What is this enterprise fundamentally?
-- Who owns it?
-- Who controls it?
-- How is it legally structured?
-- What does it sell?
-- Who buys it?
-- How does value reach the customer?
-- How does the company operate?
-- What technology and assets support it?
-- Where does revenue come from?
-- Where do costs arise?
-- How does profit become cash?
-- What capital does growth require?
-- How is the company managed?
-- What does its culture reward?
-- Why does it beat competitors?
-- What is its real moat?
-- What is hardest to replicate?
-- What are its critical dependencies?
-- What could break it?
-- What is the primary bottleneck?
-- What is it becoming?
-
-The final standard is:
-
-> **“I could mentally disassemble and reconstruct the enterprise.”**
+In Compact configuration, back-port that section so the handoff survives a short run.
 
 ---
 
-# Framework Summary
+## What each framework's evidence ladder looks like
 
-```text
-VOLUME I
-Institutional Anatomy
-Corporate + Legal + Regulatory + Ownership + Governance
+They are deliberately different, because the evidence has different provenance.
 
-VOLUME II
-Commercial & Value-Flow Anatomy
-Products + Customers + Pricing + Distribution + Value Flows
+**EREF:** CONFIRMED FACT · COMPANY CLAIM · THIRD-PARTY ESTIMATE · ANALYTICAL INFERENCE · HYPOTHESIS · UNKNOWN.
+*COMPANY CLAIM is the default for every operational, cultural and strategic assertion a subject makes about itself.*
 
-VOLUME III
-Operating-System Anatomy
-Operations + Technology + Data + People + Supply + Infrastructure
+**TREF:** CONFIRMED IMPLEMENTATION · DOCUMENTED BEHAVIOR · MAINTAINER CLAIM · MEASURED RESULT · SOURCE-CODE INFERENCE · ANALYTICAL INFERENCE · HYPOTHESIS · UNKNOWN.
+*MAINTAINER CLAIM is the default for every performance, scale and security assertion. A benchmark without stated conditions is a MAINTAINER CLAIM, not a measurement.*
 
-VOLUME IV
-Economic Anatomy
-Revenue + Costs + Unit Economics + Financial Statements + Capital
-
-VOLUME V
-Strategic Anatomy
-Management + Culture + Competition + Moat + Risk + Evolution
-
-FINAL STAGE
-Enterprise Reconstruction
-Recombine the five volumes into one integrated model.
-```
+In both: **UNKNOWN is a valid and frequently correct answer.** A study that reaches it forty times has done its job; one that reaches it never has not.
 
 ---
 
-# Name
+## Provenance
 
-**Enterprise Reverse Engineering Framework**
+**EREF's conventions are distilled from seven completed enterprise studies** — Wise plc, Atruvia AG, the DZ BANK Group, Experian plc, Robinhood Markets, Klarna, and a fourteen-volume Block, Inc. run. Several conventions exist because a specific study needed them: the governing-metric rule because one subject's revenue was meaningless by a factor of three; basis discipline because another published three sets of figures in two currencies; the credibility convention because two subjects' operational narratives proved unreliable while their audited figures did not.
 
-**Acronym:** `EREF`
+**TREF's conventions are adapted from EREF plus its own first run** — an Extended-7 study of the Blnk ledger, which produced one methodological finding worth carrying forward: **an Apache-2.0 repository proved substantially unreadable by automated means for four consecutive volumes.** GitHub tree, blob and raw endpoints were blocked; the route that eventually worked was `pkg.go.dev` at the module version, which returns the exported API with source paths *and surfaces fetchable blob URLs at a version tag*. Any future TREF study should try that first.
 
-A useful shorthand:
+---
 
-> **Disassemble. Understand. Reconstruct.**
+## Deliverables of a completed study
+
+1. `[SUBJECT]_Study_COMPLETE.md` — all volumes plus master layer, assembled in canonical order
+2. **A master layer** — front matter, conventions instantiated, contents, and appendices: glossary, canonical figures or facts register, source register, reconciliation
+3. `BUILD_SPEC.md` — the rendering specification, prepended for handoff
+4. `assemble.py` — assembler with gap check and anchored contents generation
+5. The ranked TREF candidate list, where EREF
+6. Where the objective is extraction — a consolidated verdict table and a sequenced build order
+
+---
+
+## Two rules worth knowing before you start
+
+**Every volume owns a question.** State it at the head of the brief. If a section cannot be justified against it, the section belongs elsewhere or nowhere. At five volumes this is hygiene; at fourteen it is the only thing preventing restatement.
+
+**Correct errors at source, not only in an appendix.** When volumes disagree — and independently-executed volumes will — classify each conflict as a genuine error, a dual-value figure, or a vintage difference. Where one volume is wrong, fix it in the body with a visible inline note. A reader meets the error there; the correction belongs there.
+
+---
+
+> **EREF:** *"I can explain why this business makes money, and say what would have to change for it to stop."*
+>
+> **TREF:** *"I can mentally disassemble and reconstruct this technology."*
+>
+> And where the objective is extraction, in both: *"I know which mechanisms I would carry across, which I would change, and which I would refuse — and why."*
